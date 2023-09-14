@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-14">
+        <h1 class="text-sky-500 text-center text-5xl">Money Master <i class="fa-solid fa-sack-dollar"></i></h1>
+    </header>
+    <main>
+        <section class="flex justify-center mx-12 mt-14">
+            <div class="w-1/2">
+                <img src="image/money-master.jpg" alt="">
+            </div>
+            <div class="ms-12 w-1/2 flex flex-col justify-center items-center bg-stone-100">
+                <h1 class="text-2xl mb-8 font-bold">Income</h1>
+                <h4 class="text-xl mb-8 font-medium">Income: <span><input id="income-amount"
+                            class="bg-stone-300 px-12 py-2 rounded-lg" type="text"
+                            placeholder="income per month"></span>
+                </h4>
+                <h1 class="text-2xl mb-8 font-bold">Expenses</h1>
+                <h4 class="text-xl mb-8 font-medium">Food: <span><input id="food"
+                            class="bg-stone-300 px-12 py-2 rounded-lg" type="text"
+                            placeholder="food cost per month"></span></h4>
+                <h4 class="text-xl mb-8 font-medium">Rent: <span><input id="rent"
+                            class="bg-stone-300 px-12 py-2 rounded-lg" type="text"
+                            placeholder="rent cost per month"></span></h4>
+                <h4 class="text-xl mb-8 font-medium">Clothes: <span><input id="clothes"
+                            class="bg-stone-300 px-12 py-2 rounded-lg" type="text"
+                            placeholder="clothes cost per month"></span></h4>
+                <button id="btn-calculate"
+                    class="text-2xl mb-8 font-bold text-white bg-sky-500 px-16 py-2 rounded-lg">Calculate</button>
+                <h1 class="text-2xl mb-8 font-bold">Total Expenses: <span id="total-expenses">0</span></h1>
+                <h1 class="text-2xl mb-8 font-bold">Balance: <span id="balance">0</span></h1>
+                <h4 class="text-xl mb-8 font-medium">Save: <input id="percentage"
+                        class="bg-stone-300 py-2 px-8 rounded-lg" type="text"> % <button id="btn-save"
+                        class="text-white bg-sky-500 px-14 py-2 rounded-lg">Save</button>
+                    <h1 class="text-2xl mb-8 font-bold">Saving Amount: <span id="saving-amount">0</span></h1>
+                    <h1 class="text-2xl font-bold">Remaining Balance: <span id="remaining-balance">0</span></h1>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a1f939e531.js" crossorigin="anonymous"></script>
+    <script src="js/calculate.js"></script>
+</body>
+
+</html>
